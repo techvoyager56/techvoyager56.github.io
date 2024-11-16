@@ -1,127 +1,136 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html, body {
+html,body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+
 }
 
-#main {
+#main{
     height: 100%;
     width: 100%;
+
 }
 
-#header1 {
-    height: auto;
+#header1{
+    height: 15%;
     width: 100%;
     background-color: white;
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    z-index: 10;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    
+    
 }
 
-#logo {
-    height: 50px;
-    max-width: 150px;
+#logo{
+   height: 70%;
+   margin: 20px;
+    
 }
 
-#logo img {
+#logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.text {
-    margin: 5px;
+
+.text{
+
+    margin: 30px;
     color: rgb(2, 2, 25);
-    cursor: pointer;
-    font-size: 1rem;
+    
+    
 }
 
-.text:hover {
-    color: rgb(115, 84, 84);
+.text:hover{
+        color: rgb(115, 84, 84);
 }
 
-#contact {
+#contact{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: 50px;
     text-align: center;
     color: rgb(2, 2, 25);
-    font-size: 0.9rem;
 }
 
-#contact:hover {
+#contact:hover{
     color: rgb(115, 84, 84);
 }
 
-#us {
-    margin-top: 5px;
+#us{
+    margin-top: 0%;
+    margin-left: 50px;
+    text-align: center;
 }
 
-#search img {
+#search{
     width: 20px;
-    height: 20px;
-    cursor: pointer;
+    margin: 40px;
+ 
 }
 
-#login {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-#login img {
-    width: 20px;
-    height: 20px;
+#search img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    
 }
 
-#login p {
-    margin-left: 5px;
-    font-weight: bold;
+#login{
+    width: 20px;
+  
 }
 
-#try {
-    font-size: 1rem;
-    padding: 8px 15px;
-    margin-left: 10px;
-    background-color: green;
-    color: white;
+#login img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+#try{
+    font-size: larger; 
+    padding: 10px 20px; 
+    margin-left: 80px; 
+    background-color: green; 
+    color: white; 
     border-radius: 5px;
-    white-space: nowrap;
 }
 
-#try a {
+#try a{
     text-decoration: none;
     color: white;
 }
 
-#try:hover {
+#try:hover{
     background-color: brown;
+
 }
 
-#fake {
+
+#fake{
     height: 15%;
     width: 100%;
     background-color: white;
+
 }
 
-#page1 {
-    height: auto;
+#page1{
+    height: 85%;
     width: 100%;
     background-color: white;
 }
 
-#strip {
+#strip{
     width: 100%;
     height: 8%;
     background-color: rgb(2, 2, 65);
@@ -131,191 +140,113 @@ html, body {
     align-items: center;
     color: white;
     font-size: larger;
-    padding: 10px;
+    
 }
-
-#content {
-    height: auto;
+#content{
+    height: 82%;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-#content1 {
+#content1{
     width: 50%;
-    padding: 20px;
+    height: 100%;
+    background-color: white
+  
 }
 
-#p1 {
-    font-size: 2.5rem;
+#p1{
+    font-size: 4em;
+    margin-top: 80px;
+    margin-left: 80px;
     font-weight: 600;
+
+
 }
 
-#p2 {
-    margin-top: 20px;
-    font-size: 1.2rem;
+#p2{
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 1.3em;
 }
 
-#btns {
+#btns{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 10px;
 }
 
-#p3, #p4 {
+#p3{
     padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#p3 {
+    margin-top: 30px;
+    margin-left: 80px;
+    color: white;
     background-color: blue;
-    color: white;
+    width: 19%;
     border: 1px solid lightblue;
+    border-radius: 5px;
 }
 
-#p3 a {
-    text-decoration: none;
+#p3 a{
+    text-decoration: none; 
     color: white;
 }
 
-#p3:hover {
+#p3:hover{
     background-color: green;
 }
 
-#p4 {
-    background-color: white;
+#p4{
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 30px;
     color: blue;
+    background-color: white;
+    width: 19%;
     border: 1px solid blue;
+    border-radius: 5px;
+    
 }
 
-#p4 a {
+#p4 a{
     text-decoration: none;
     color: blue;
 }
 
-#p4:hover {
+#p4:hover{
     background-color: lightgreen;
 }
 
-#content2 {
+#content2{
     width: 50%;
+    height: 100%;
+    background-color:white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    
+   
 }
 
-#heading {
+#content2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+#heading{
     text-align: center;
-    margin-top: 20px;
+    
 }
 
-#heading p {
-    font-size: 1.5rem;
+
+#page2{
+    height: 85%;
+    width: 100%;
+    background-color: rgb(83, 48, 48);
 }
 
-/* Media Queries */
-
-/* For Tablets */
-@media screen and (max-width: 768px) {
-    #header1 {
-        padding: 10px;
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    #try {
-        font-size: 0.9rem;
-        padding: 5px 10px;
-        margin: 5px 0;
-    }
-
-    #content1, #content2 {
-        width: 100%;
-    }
-
-    #p1 {
-        font-size: 2rem;
-    }
-
-    #p2 {
-        font-size: 1rem;
-    }
-
-    #btns {
-        flex-direction: column;
-    }
-
-    #p3, #p4 {
-        width: 100%;
-        font-size: 1rem;
-    }
+#page3{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(63, 112, 50);
 }
 
-/* For Mobile Devices */
-@media screen and (max-width: 480px) {
-    #header1 {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    #logo {
-        height: 40px;
-    }
-
-    #logo img {
-        height: 100%;
-    }
-
-    .text {
-        font-size: 0.8rem;
-    }
-
-    #try {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
-
-    #content {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    #content1, #content2 {
-        padding: 10px;
-        width: 100%;
-    }
-
-    #p1 {
-        font-size: 1.8rem;
-        margin-top: 10px;
-    }
-
-    #p2 {
-        font-size: 0.9rem;
-    }
-
-    #btns {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    #p3, #p4 {
-        width: 100%;
-        padding: 8px;
-    }
-
-    #strip {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    iframe {
-        width: 90%;
-        height: 200px;
-    }
-}
