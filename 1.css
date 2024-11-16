@@ -1,4 +1,4 @@
-
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #main {
@@ -17,20 +18,21 @@ html, body {
 }
 
 #header1 {
-    height: 15%;
+    height: auto;
     width: 100%;
     background-color: white;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
     z-index: 10;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #logo {
-    height: 70%;
+    height: 50px;
     max-width: 150px;
 }
 
@@ -41,9 +43,10 @@ html, body {
 }
 
 .text {
-    margin: 0 15px;
+    margin: 5px;
     color: rgb(2, 2, 25);
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .text:hover {
@@ -51,10 +54,9 @@ html, body {
 }
 
 #contact {
-    margin-top: -20px;
-    margin-bottom: -20px;
     text-align: center;
     color: rgb(2, 2, 25);
+    font-size: 0.9rem;
 }
 
 #contact:hover {
@@ -89,8 +91,8 @@ html, body {
 }
 
 #try {
-    font-size: larger;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 8px 15px;
     margin-left: 10px;
     background-color: green;
     color: white;
@@ -114,7 +116,7 @@ html, body {
 }
 
 #page1 {
-    height: 85%;
+    height: auto;
     width: 100%;
     background-color: white;
 }
@@ -129,13 +131,15 @@ html, body {
     align-items: center;
     color: white;
     font-size: larger;
+    padding: 10px;
 }
 
 #content {
-    height: 82%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #content1 {
@@ -213,42 +217,24 @@ html, body {
     font-size: 1.5rem;
 }
 
-#page2 {
-    height: 85%;
-    width: 100%;
-    background-color: rgb(83, 48, 48);
-}
-
-#page3 {
-    height: 90%;
-    width: 100%;
-    background-color: rgb(63, 112, 50);
-}
-
 /* Media Queries */
 
 /* For Tablets */
 @media screen and (max-width: 768px) {
     #header1 {
+        padding: 10px;
         flex-wrap: wrap;
         height: auto;
-        padding: 10px;
-    }
-
-    .text, #try {
-        margin: 5px 10px;
     }
 
     #try {
-        margin-left: 0;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        margin: 5px 0;
     }
 
     #content1, #content2 {
         width: 100%;
-    }
-
-    #content {
-        flex-direction: column;
     }
 
     #p1 {
@@ -258,9 +244,18 @@ html, body {
     #p2 {
         font-size: 1rem;
     }
+
+    #btns {
+        flex-direction: column;
+    }
+
+    #p3, #p4 {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
 
-
+/* For Mobile Devices */
 @media screen and (max-width: 480px) {
     #header1 {
         flex-wrap: wrap;
@@ -268,8 +263,31 @@ html, body {
         gap: 10px;
     }
 
-    .text, #try {
-        font-size: 0.9rem;
+    #logo {
+        height: 40px;
+    }
+
+    #logo img {
+        height: 100%;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    #try {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    #content {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #content1, #content2 {
+        padding: 10px;
+        width: 100%;
     }
 
     #p1 {
@@ -283,22 +301,21 @@ html, body {
 
     #btns {
         flex-direction: column;
+        gap: 5px;
     }
 
     #p3, #p4 {
         width: 100%;
+        padding: 8px;
     }
 
-    #content1, #content2 {
-        padding: 10px;
+    #strip {
+        font-size: 1rem;
+        padding: 5px;
     }
 
-    #logo img {
-        height: 30px;
-    }
-
-    #search img {
-        width: 15px;
-        height: 15px;
+    iframe {
+        width: 90%;
+        height: 200px;
     }
 }
