@@ -32,8 +32,7 @@
     font-weight: 700;
     cursor: pointer;
 }
-.try:hover
-{
+.try:hover {
     background-color: aliceblue;
 }
 
@@ -84,9 +83,8 @@
     text-align: center;
     font-weight: 700;
 }
-.button:hover
-{
-    background-color:#E6B5D6 ;
+.button:hover {
+    background-color: #E6B5D6;
 }
 
 .imgs {
@@ -148,21 +146,18 @@
 .boxx {
     margin-top: -12.5rem;
 }
-.boxess
-{
+.boxess {
     margin-left: 0rem;
 }
-.boxess p
-{
+.boxess p {
     margin-left: 0;
-    margin-right: 3rem ;
+    margin-right: 3rem;
     font-size: 1.3rem;
-  
 }
 
 .footer {
-    position: relative; 
-    height: 1000px;
+    position: relative;
+    height: 62.5rem;
     background-color: #222f3d;
     display: flex;
     justify-content: center;
@@ -170,12 +165,12 @@
 }
 
 .intersection {
-    height: 200px;
-    width: 600px;
+    height: 12.5rem;
+    width: 37.5rem;
     position: absolute;
     top: 0;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem;
     border-radius: 1rem;
@@ -183,15 +178,13 @@
     text-align: center;
     z-index: 10;
 }
-.intersection p
-{
+.intersection p {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
-.intersection button
-{
-    margin-top: 10px;
+.intersection button {
+    margin-top: 0.625rem;
     border: 1rem solid transparent;
     border-radius: 2rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -201,107 +194,89 @@
     font-size: 0.8rem;
     font-weight: 700;
 }
-.intersection button:hover
-{
-    background-color:#E6B5D6 ;
+.intersection button:hover {
+    background-color: #E6B5D6;
 }
-.main
-{
-    height: 500px;
-    width: 1300px;
+
+.main {
+    height: 31.25rem;
+    width: 81.25rem;
     background-color: #222f3d;
     display: flex;
     justify-content: space-evenly;
-    margin-top: -200px;
+    margin-top: -12.5rem;
 }
 
-.div1
-{
+.div1 {
     background-color: #222f3d;
-    width: 300px;
-    height: 500px;
-    
+    width: 18.75rem;
+    height: 31.25rem;
 }
-.rlogo
-{
+
+.rlogo {
     background-size: cover;
     height: 3rem;
-    padding: 7px;
+    padding: 0.4375rem;
     width: 16rem;
-    margin: 40px 0 0 30px;
+    margin: 2.5rem 0 0 1.875rem;
     background-color: white;
     border-radius: 5rem;
-   
 }
-.icoon
-{
-    margin-left: 45px;
-    margin-top: 40px;
+
+.icoon {
+    margin-left: 2.8125rem;
+    margin-top: 2.5rem;
     display: flex;
 }
-.icoon:hover
-{
+.icoon:hover {
     cursor: pointer;
 }
-.icoon i
-{
+.icoon i {
     font-size: 1.5rem;
     color: white;
 }
-.icoon p
-{
-    margin-left: 15px;
+.icoon p {
+    margin-left: 0.9375rem;
     color: white;
 }
 
-.abouut
-{
-    margin: 116px 0 0 0;
+.abouut {
+    margin: 7.25rem 0 0 0;
 }
-.about
-{
-    margin-left: 150px;
-    margin-bottom: 60px;
+.about {
+    margin-left: 9.375rem;
+    margin-bottom: 3.75rem;
     font-weight: 700;
     color: white;
 }
-.about:hover
-{
+.about:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.divv4
-{
+.divv4 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     font-size: 2rem;
 }
-.divv4 a
-{
-    margin: 10px;
+.divv4 a {
+    margin: 0.625rem;
 }
-.divv4 i
-{
+.divv4 i {
     color: white;
 }
-.divv4 i:hover
-{
+.divv4 i:hover {
     color: aqua;
 }
 .copyr {
-    margin-top: 180px;
-    padding-left: 0px;
+    margin-top: 11.25rem;
+    padding-left: 0;
     text-align: center;
     font-size: 1rem;
     color: white;
-    background-color: #222f3d;  /* Add background for visibility */
-    padding: 20px 0;
-    padding-right: 10px;
+    background-color: #222f3d;
+    padding: 1.25rem 0;
+    padding-right: 0.625rem;
 }
-
-
-
