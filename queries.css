@@ -32,6 +32,11 @@
         flex-wrap: wrap;
     }
 
+    .team1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
@@ -86,6 +91,11 @@
         flex-wrap: wrap;
     }
 
+    .team1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 }
@@ -133,6 +143,12 @@
         flex-wrap: wrap;
     }
 
+    .team1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
   
 }
 
@@ -172,12 +188,18 @@
     }
 
     .foot{
-        margin-top: 35rem;
+        margin-top: 2rem;
         margin-left: 3rem;
     }
     .foot2 {
         flex-wrap: wrap;
     }
 
+    .team1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
 
 }
