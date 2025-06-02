@@ -454,3 +454,21 @@ ul{
     text-decoration: underline;
      text-decoration-thickness: 1.5px;
 }
+
+.hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #333;
+    padding: 1rem;
+    z-index: 1100; 
+    margin-right: 6rem;
+}
+
+.mobile-menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
