@@ -13,24 +13,31 @@
 <body>
     
         <header class="navbar">
-        <nav class="nav1">
-            <a href="#"><img width="80px" src="./Notion-Logo.png" alt=""></a>
-                <ul class="nav2">
-                    <li class="btn">Notion</li>
-                    <li class="btn">Mail</li>
-                    <li class="btn">Calender</li>
-                    <li class="btn">AI</li>
-                    <li class="btn">Enterprise</li>
-                    <li class="btn">Pricing</li>
-                    <li class="btn">Explore</li>
-                    <li class="btn">Request a Demo</li>
-                </ul>
-                <ul class="nav2">
-                    <li class="btn">Login</li>
-                    <li class="btn-primary">Get Notion Free</li>
-                </ul>
-        </nav>
-    </header>
+    <nav class="nav1">
+        <a href="#"><img width="80px" src="./Notion-Logo.png" alt="Notion Logo"></a>
+      
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+     
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="nav2">
+                <li><a href="#" class="btn">Notion</a></li>
+                <li><a href="#" class="btn">Mail</a></li>
+                <li><a href="#" class="btn">Calender</a></li>
+                <li><a href="#" class="btn">AI</a></li>
+                <li><a href="#" class="btn">Enterprise</a></li>
+                <li><a href="#" class="btn">Pricing</a></li>
+                <li><a href="#" class="btn">Explore</a></li>
+                <li><a href="#" class="btn">Request a Demo</a></li>
+            </ul>
+            <ul class="nav2">
+                <li><a href="#" class="btn">Login</a></li>
+                <li><a href="#" class="btn-primary">Get Notion Free</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
     <section class="home">
         <div class="home1">
@@ -198,7 +205,37 @@
         </div>
     </footer>
 
+    <script>
+    // Get the hamburger button and menu by their IDs
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
 
+    // When hamburger is clicked
+    hamburger.onclick = function () {
+        // If menu is hidden, show it; if shown, hide it
+        if (mobileMenu.className === 'mobile-menu') {
+            mobileMenu.className = 'mobile-menu active';
+            hamburger.setAttribute('aria-label', 'Close Menu');
+        } else {
+            mobileMenu.className = 'mobile-menu';
+            hamburger.setAttribute('aria-label', 'Menu');
+        }
+    };
+
+    // When Enter or Space is pressed on hamburger
+    hamburger.onkeydown = function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault(); // Stop Space from scrolling
+            if (mobileMenu.className === 'mobile-menu') {
+                mobileMenu.className = 'mobile-menu active';
+                hamburger.setAttribute('aria-label', 'Close Menu');
+            } else {
+                mobileMenu.className = 'mobile-menu';
+                hamburger.setAttribute('aria-label', 'Menu');
+            }
+        }
+    };
+</script>
     
 
 </body>
