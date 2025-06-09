@@ -106,6 +106,9 @@ function checkwinner(){
             if(pos1 === pos2 && pos2 === pos3 && pos3 === pos1)
             {
                 start.innerHTML = `Winner is ${pos1}`;
+                boxes[pattern[0]].style.background = "yellow"
+                boxes[pattern[1]].style.background = "yellow"
+                boxes[pattern[2]].style.background = "yellow"
                 gameover = true;
                 return;
             }
