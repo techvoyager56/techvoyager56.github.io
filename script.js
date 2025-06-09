@@ -76,6 +76,7 @@ boxes.forEach((box) => {
 reset.addEventListener("click" , () => {
     boxes.forEach((box) => {
         box.innerHTML = "";
+        box.style.background = "";
         if(play)
         {
             start.innerHTML = "Game Started";
